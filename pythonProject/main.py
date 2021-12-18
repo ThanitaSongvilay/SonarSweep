@@ -22,7 +22,6 @@ def compare(dict):
             break
     print(counter)
 
-
 def sweepOcean2():
     depths = []
     window = []
@@ -49,8 +48,6 @@ def sweepOcean2():
 
     compare(dict)
 
-
-
 def getKeys(window, dict, depths):
 
     lngth = len(window)
@@ -61,6 +58,5 @@ def getKeys(window, dict, depths):
         dict[window[0]] = dict.get(window[0]) + depths
         dict[window[1]] = dict.get(window[1]) + depths
         dict[window[2]] = depths
-
 
 sweepOcean2()

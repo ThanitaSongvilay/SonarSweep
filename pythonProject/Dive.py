@@ -1,14 +1,32 @@
+str_list = []
+depth = 0
+horizontalPosition = 0
 
 
-def dive():
-  input_List = input().split()
-  for i in range(0, len(input_List)):
-    ele = input()
-    input_List.append(ele)
+def inputList():
+  while True:
+    line = input()
+    if line:
+      str_list.append(line)
+    else:
+      break
 
-  print(input_List)
 
-dive()
+def splitComp(list):
+  compList = [str.split() for str in str_list]
+  print(compList)
+
+
+inputList()
+splitComp(list)
+
+
+
+
+
+
+
+
 
 
 
